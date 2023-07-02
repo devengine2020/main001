@@ -1,0 +1,119 @@
+Sub LIST()
+    Application.ScreenUpdating = False
+    Application.DisplayAlerts = False
+    
+    Dim AA As Long
+    Dim COUNTER As Integer
+    
+    AA = (-Range("A59").Value + Range("A32").Value) * 2 - 1
+    
+    Range("B60:E60").Select
+    
+    For COUNTER = 1 To AA
+        'Range("$B$59:$E$59").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$B$59:$E$59").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B32").Value - Range("A32").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$32:$F$32").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$32:$F$32").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B33").Value - Range("A33").Value) * 2 + 1
+
+    For COUNTER = 1 To AA
+        'Range("$C$33:$F$33").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$33:$F$33").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B34").Value - Range("A34").Value) * 2 + 1
+
+    For COUNTER = 1 To AA
+        'Range("$C$34:$F$34").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$34:$F$34").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B35").Value - Range("A35").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$35:$F$35").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$35:$F$35").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B36").Value - Range("A36").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$36:$F$36").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$36:$F$36").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B37").Value - Range("A37").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$37:$F$37").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$37:$F$37").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B38").Value - Range("A38").Value) * 2 + 1
+    
+    
+    For COUNTER = 1 To AA
+        'Range("$C$38:$F$38").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$38:$F$38").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B39").Value - Range("A39").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$39:$F$39").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$39:$F$39").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B40").Value - Range("A40").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$40:$F$40").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$40:$F$40").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    AA = (Range("B41").Value - Range("A41").Value) * 2 + 1
+    
+    For COUNTER = 1 To AA
+        'Range("$C$41:$F$41").Copy
+        'Selection.PasteSpecial
+        Selection.FormulaR1C1 = Range("$C$41:$F$41").FormulaR1C1
+        Selection.Offset(1, 0).Select
+    Next COUNTER
+    
+    ' SELECT(!$A$1)
+    Range("$A$1").Select
+    
+    ' WINDOW.MAXIMIZE()
+    ActiveWindow.WindowState = xlMaximized
+    
+    Application.ScreenUpdating = True
+    Application.DisplayAlerts = True
+End Sub
+
